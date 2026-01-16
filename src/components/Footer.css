@@ -1,0 +1,29 @@
+/* Footer styles */
+@scope (.site-footer) {
+  :scope {
+    margin-top: auto;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+  }
+
+  p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+  }
+
+  p::before {
+    content: '❤️';
+    font-size: 1rem;
+  }
+
+  p::after {
+    content: '🤖';
+    font-size: 1rem;
+  }
+}

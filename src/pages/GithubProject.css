@@ -1,0 +1,136 @@
+@scope (.github-project-page, .github-project-container) {
+  .header {
+    width: 100%;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-md) 0;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .back-link {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--color-text-secondary);
+  }
+
+  .back-link:hover {
+    color: var(--color-primary);
+  }
+
+  .github-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-base);
+  }
+
+  .github-button:hover {
+    background-color: var(--color-border);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+    color: var(--color-text);
+  }
+}
+
+@scope (.github-project-page) {
+  :scope {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+    flex: 1;
+    padding-bottom: var(--spacing-2xl);
+  }
+
+  .markdown-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+  }
+
+  .github-project-footer {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: center;
+  }
+
+  .markdown-body {
+    background-color: transparent !important;
+    color: var(--color-text) !important;
+    font-family: var(--font-family) !important;
+  }
+}
+
+/* Override github-markdown-css for dark mode compatibility and consistency */
+@media (prefers-color-scheme: dark) {
+  @scope (.github-project-page) {
+    .markdown-body {
+      color-scheme: dark;
+    }
+  }
+}
+
+@scope (.github-project-container) {
+  :scope {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2xl);
+    text-align: center;
+  }
+
+  .loading-spinner {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+  }
+
+  .error-message h2 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .error-message p {
+    margin-bottom: var(--spacing-lg);
+    max-width: 500px;
+  }
+
+  .back-link {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  @scope (.github-project-page) {
+    .header-content {
+      padding: 0 var(--spacing-md);
+    }
+    
+    .markdown-wrapper {
+      padding: 0 var(--spacing-md);
+    }
+  }
+}
