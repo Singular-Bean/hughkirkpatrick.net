@@ -34,7 +34,7 @@ jobs:
 
       -   name: Sync site to S3
           run: |
-            aws s3 sync --quiet --delete ./dist s3://$S3_BUCKET
+            aws s3 sync --quiet ./dist s3://$S3_BUCKET
 
       -   name: Invalidate CloudFront Cache
           run: |
