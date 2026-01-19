@@ -20,7 +20,7 @@ export const projects = [
     title: 'FA Grassroots Player Movement Project',
     description: 'Impact of player behaviour on teams in grassroots football. Produced during internship at the FA.',
     type: 'external',
-    url: 'https://www.linkedin.com/pulse/draft/preview/7417967087123480576/'
+    url: 'https://www.linkedin.com/pulse/fa-grassroots-player-movements-project-hugh-kirkpatrick-iww5e'
   },
   {
     category: 'data',
