@@ -36,8 +36,7 @@ function Home() {
                         </p>
                         <div className="hero-description">
                             <p>
-                                My work focuses on football data, where I explore the intersection of [REWORD:
-                                data science and tactical analysis]. I'm particularly interested in how advanced
+                                My work focuses on football data, where I explore the intersection of data science and visual storytelling to create actionable insights. I'm particularly interested in how advanced
                                 metrics can provide deeper insights into player and team performance.</p>
                             <p>
                                 My personal work (on GitHub) led to an internship at the Football Association in 2025, where I
