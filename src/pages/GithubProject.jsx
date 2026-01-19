@@ -8,6 +8,12 @@ import GithubButton from '../components/GithubButton'
 import 'github-markdown-css/github-markdown.css'
 import './GithubProject.css'
 
+// Strip YAML frontmatter from markdown (content between --- delimiters at start)
+function stripFrontmatter(markdown) {
+  const frontmatterRegex = /^---\s*\n[\s\S]*?\n---\s*\n?/
+  return markdown.replace(frontmatterRegex, '')
+}
+
 function GithubProject() {
   const { projectName } = useParams()
   const [markdown, setMarkdown] = useState('')
@@ -108,7 +114,7 @@ function GithubProject() {
                 rehypePlugins={[rehypeRaw]}
                 components={components}
               >
-                {markdown}
+                {stripFrontmatter(markdown)}
               </ReactMarkdown>
             </article>
             <div className="github-project-footer">

@@ -29,7 +29,7 @@ function Navbar() {
             </svg>
           </a>
           <a 
-            href="https://huggingface.co/jugglingcats/spaces" 
+            href="https://huggingface.co/Singular-Bean/spaces"
             target="_blank" 
             rel="noopener noreferrer"
             className="navbar-social-link huggingface"

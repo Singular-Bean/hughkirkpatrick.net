@@ -4,6 +4,23 @@ import {projects} from '../config'
 import './Home.css'
 import {ProjectCard} from "../components/ProjectCard";
 
+const skills = [
+    'python',
+    'jupyter',
+    'matplotlib',
+    'scikit-learn',
+    'xgboost',
+    'sql',
+    'numpy',
+    'pandas',
+    'seaborn',
+    'azure',
+    'aws',
+    'github',
+    'jetbrains',
+    'economics',
+]
+
 function Home() {
 
     return (
@@ -69,6 +86,28 @@ function Home() {
                         </ul>
                     </section>
 
+                    <section className="skills">
+                        <div className="skills-track">
+                            {skills.map((skill, index) => (
+                                <div key={`skill-1-${index}`}>{skill}</div>
+                            ))}
+                            {skills.map((skill, index) => (
+                                <div key={`skill-2-${index}`}>{skill}</div>
+                            ))}
+                        </div>
+                    </section>
+
+                    <section className="affiliations">
+                        <div className="affiliation">
+                            <img src="https://www.lancaster.ac.uk/media/wdp/style-assets/images/foundation/lu-shield.svg" className="lancaster logo" alt="Lancaster University Logo"/>
+                            Lancaster University
+                        </div>
+                        <div className="affiliation">
+                            <img src="/burnley-fc-logo.svg" className="burnley logo" alt="Burnley FC Logo"/>
+                            Burnley Supporter
+                        </div>
+                    </section>
+
                     <section className="testimonial-section">
                         <blockquote className="hero-quote">
                             <p>
@@ -78,7 +117,7 @@ function Home() {
                                 A professional individual who works well with other team members
                                 in getting the job done."
                             </p>
-                            <cite>— Ed Gething, The Football Association</cite>
+                            <cite>— Ed Gething, Data Architect at The Football Association</cite>
                         </blockquote>
                     </section>
                 </div>

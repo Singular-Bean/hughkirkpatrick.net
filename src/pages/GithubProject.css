@@ -81,6 +81,12 @@
     color: var(--color-text) !important;
     font-family: var(--font-family) !important;
   }
+
+  /* Display badge links on a single line */
+  .markdown-body a:has(> img[src*="shields.io"]) {
+    display: inline-block;
+    margin-right: var(--spacing-xs);
+  }
 }
 
 /* Override github-markdown-css for dark mode compatibility and consistency */
