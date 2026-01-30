@@ -2,7 +2,7 @@ export const projects = [
   {
     category: 'data',
     title: 'Rating Metric Creation and Pass Simulator Training',
-    description: 'Machine learning models for predicting football match outcomes using Sofascore data.',
+    description: 'Player match rating model.',
     type: 'github',
     repo: 'Player_Ratings_and_Sim',
     branch: 'master'
