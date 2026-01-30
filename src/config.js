@@ -1,10 +1,10 @@
 export const projects = [
   {
     category: 'data',
-    title: 'Sofascore Predictions',
+    title: 'Rating Metric Creation and Pass Simulator Training',
     description: 'Machine learning models for predicting football match outcomes using Sofascore data.',
     type: 'github',
-    repo: 'Sofascore_Predictions',
+    repo: 'Player_Ratings_and_Sim',
     branch: 'master'
   },
   {
@@ -46,13 +46,14 @@ export const projects = [
     repo: 'match-viz',
     branch: 'main'
   },
-  // {
-  //   category: 'article',
-  //   title: 'Understanding xG in Football Analytics',
-  //   description: 'A deep dive into expected goals and how they revolutionize football analysis.',
-  //   type: 'external',
-  //   url: '#'
-  // },
+  {
+    category: 'data',
+    title: 'Sofascore Predictions',
+    description: 'Machine learning models for predicting football match outcomes using Sofascore data.',
+    type: 'github',
+    repo: 'Sofascore_Predictions',
+    branch: 'master'
+  },
   {
     category: 'article',
     title: 'Quantifying Professional Player Impact',
