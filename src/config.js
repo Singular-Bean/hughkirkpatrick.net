@@ -1,6 +1,13 @@
 export const projects = [
   {
     category: 'data',
+    title: 'Improved Team of the Week Algorithm',
+    description: 'Positional probability model and formation likelihood optimisation combined with SofaScores rating to create a realistic team of the week lineup.',
+    type: 'github',
+    repo: 'Single_Match_Stat_Manipulation',
+    branch: 'master'
+  },
+    category: 'data',
     title: 'Rating Metric Creation and Pass Simulator Training',
     description: 'Player match rating model.',
     type: 'github',
@@ -68,7 +75,7 @@ export const projects = [
     type: 'github',
     repo: 'Caching_Projects',
     branch: 'main'
-  },
+  }
   // {
   //   category: 'article',
   //   title: 'Getting Started with Data Science',
@@ -76,12 +83,4 @@ export const projects = [
   //   type: 'external',
   //   url: '#'
   // },
-  {
-    category: 'web',
-    title: 'Personal Portfolio Website',
-    description: 'This website! Built with React and Vite, auto-deployed to AWS.',
-    type: 'github',
-    repo: 'hughkirkpatrick.net',
-    branch: 'master'
-  }
 ]
