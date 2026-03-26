@@ -7,6 +7,7 @@ export const projects = [
     repo: 'Single_Match_Stat_Manipulation',
     branch: 'master'
   },
+  {
     category: 'data',
     title: 'Rating Metric Creation and Pass Simulator Training',
     description: 'Player match rating model.',
