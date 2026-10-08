@@ -1,6 +1,14 @@
 export const projects = [
   {
     category: 'data',
+    title: 'Scouting Affordable Replacements',
+    description: 'Uses principal component analysis to identify statistically similar players to a given player.',
+    type: 'github',
+    repo: 'RecruitmentProjects',
+    branch: 'master'
+  },
+  {
+    category: 'data',
     title: 'Improved Team of the Week Algorithm',
     description: 'Positional probability model and formation likelihood optimisation combined with SofaScores rating to create a realistic team of the week lineup.',
     type: 'github',
